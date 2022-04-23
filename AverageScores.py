@@ -13,7 +13,7 @@
 # The average score is 86.8. (and the high score is 93. Extra credit)
 
 #input
-print("How many exams? ")
+print("How many exams?")
 n = int(input())
 
 tempValue = 0
@@ -21,14 +21,13 @@ combinedScore = 0
 tempScore = 0
 highestScore = 0
 
-while(tempValue < n):
+for number in range(n):
     print("Enter a score: ")
-    tempScore = float(input())
-    tempValue += 1
+    tempScore = float(input())    
 
     #check score validity
     while(tempScore<0 or tempScore>100):
-        print("Enter a score between 0 and 100: ")
+        print("Enter a valid score between 0 and 100: ")
         tempScore = float(input())
 
     #adds all the scores into one variable
